@@ -28,7 +28,7 @@ Below are screenshots of the proof of the working workflow for deployment in GKE
 
 ![](images/screenshot7.png)
 
-### Triggering a deployment with release
+### Triggering a deployment with release (first try)
 
 ![](images/screenshot8.png)
 
@@ -42,6 +42,12 @@ Below are screenshots of the proof of the working workflow for deployment in GKE
 
 ![](images/screenshot13.png)
 
+There is an error before deployment began. Probably, due to the secret SA key. I have secret key as the private_key that I copied from the JSON file. I will now put the entire JSON secret key file as the secret key on GitHub.
+
+### Triggering a deployment with release (second try)
+
+![](images/screenshot8.png)
+
 ![](images/screenshot14.png)
 
 ![](images/screenshot15.png)
@@ -52,14 +58,17 @@ Below are screenshots of the proof of the working workflow for deployment in GKE
 
 ![](images/screenshot18.png)
 
-<br>
+![](images/screenshot19.png)
 
-## Lab Notes
+![](images/screenshot20.png)
 
-### Asdf
+![](images/screenshot21.png)
 
+![](images/screenshot22.png)
 
+![](images/screenshot23.png)
 
-### Qwer
+It says that some backend services are in unknown state. Later, we see that in the bottom, it shows that there might be a problem with one of the services. The reason is unknown: could be that the deployment did not go very well because of us or just because GCP is imperfect, or maybe because I am using free trial version of GCP. Nonetheless, it is working:
 
+![](images/screenshot24.png)
 
